@@ -8,17 +8,17 @@ fi
 
 #xine
 if ! dpkg -l | grep -q xine-console; then
-    echo -e "Installing JvoiceXML dependencies...\n Might tak a while"
+    echo -e "\nInstalling JvoiceXML dependencies...\nMight take a while\n"
     sudo apt install -y xine-console > /dev/null
 else
-    echo -e "Starting process... \n Might take a  while"
+    echo -e "\nStarting process...\n\nMight take a while\n"
 fi
 #mpv
 if ! dpkg -l | grep -q mpv; then
     sudo apt install -y mpv > /dev/null
-    echo "Processing..."
+    echo -e "\nProcessing..."
 else
-    echo "Processing..."
+    echo -e "\nProcessing..."
 fi
 
 
@@ -56,9 +56,9 @@ echo -e "\n"
 cd ../../
 rm -Rf JvoiceFlo20112000
 
-echo "*------------------------------*"
-echo "|Attends que je nettoie ton pc!|"
-echo "*------------------------------*"
+echo "*-----------------------------------*"
+echo "| Attends que je nettoie mon bazar! |"
+echo "*-----------------------------------*"
 
 
 
